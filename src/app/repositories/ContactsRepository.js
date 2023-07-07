@@ -33,8 +33,6 @@ class ContactsRepository {
   delete(id) {
     return new Promise((resolve) => {
       contacts = contacts.filter((contact) => contact.id !== id);
-      console.log(id);
-      console.log(contacts);
       resolve();
     });
   }
