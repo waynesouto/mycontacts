@@ -2,7 +2,7 @@ const { Client } = require('pg');
 
 const client = new Client({
   host: 'localhost',
-  port: 51198,
+  port: 52134,
   user: 'postgres',
   password: 'postgres',
   database: 'mycontacts',
@@ -10,7 +10,7 @@ const client = new Client({
 
 client.connect();
 
-exports.query = async (query) => {
-  const { rows } = await client.query(query);
+exports.query = async (query, values) => {
+  const { rows } = await client.query(query, values);
   return rows;
 };
