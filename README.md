@@ -1,5 +1,5 @@
 # mycontacts
-API in nodejs using express to store contacts
+API in nodejs using express to store contacts and their category
 
 ## Utils
 `yarn dev` or `npm run dev` to start server;
