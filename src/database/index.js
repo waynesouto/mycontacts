@@ -1,4 +1,5 @@
 const { Client } = require('pg');
+require('express-async-errors');
 
 const client = new Client({
   host: 'localhost',
