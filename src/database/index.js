@@ -1,8 +1,9 @@
 const { Client } = require('pg');
+require('express-async-errors');
 
 const client = new Client({
   host: 'localhost',
-  port: 52134,
+  port: 54789,
   user: 'postgres',
   password: 'postgres',
   database: 'mycontacts',
